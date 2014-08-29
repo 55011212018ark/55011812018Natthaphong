@@ -1,7 +1,4 @@
-
- // Playground - noun: a place where people can play
- 
- class   TipCalculator{
+  class   TipCalculator{
     
     //2
     let total: Double
