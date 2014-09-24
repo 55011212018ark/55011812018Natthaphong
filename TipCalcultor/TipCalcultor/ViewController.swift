@@ -24,11 +24,11 @@ class ViewController: UIViewController {
         resultsTextview.text = results
     }
 
-    @IBAction func taxPercentageChanged(sender : AnyObject){
+    @IBAction func taxpercen(sender: AnyObject) {
         tipCal.taxPct = Double(taxPctSlider.value) / 100.0
-        refredhUI()
-        
-    }
+        refredhUI()        }
+    
+   
     @IBAction func ViewTappend(sender : AnyObject){
         totalTextfield.resignFirstResponder()
         

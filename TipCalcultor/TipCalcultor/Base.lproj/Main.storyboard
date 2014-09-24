@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aCx-Vl-2aj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aCx-Vl-2aj">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--Tip Controller-->
@@ -43,12 +43,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="TwJ-xx-LGv">
-                                <rect key="frame" x="223" y="203" width="293" height="31"/>
-                                <connections>
-                                    <action selector="taxPercentageChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="CbI-nL-Ner"/>
-                                </connections>
-                            </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92l-ia-ogS">
                                 <rect key="frame" x="260" y="259" width="46" height="30"/>
                                 <state key="normal" title="Button">
@@ -58,6 +52,13 @@
                                     <action selector="calculateTappen:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7Te-8q-trC"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="TwJ-xx-LGv">
+                                <rect key="frame" x="223" y="199" width="293" height="31"/>
+                                <connections>
+                                    <action selector="taxPercentageChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="IWX-uk-sZT"/>
+                                    <action selector="taxpercen:" destination="vXZ-lx-hvc" eventType="valueChanged" id="CRS-Fp-HyC"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -66,6 +67,7 @@
                         <outlet property="resultsTextview" destination="qas-Fv-fub" id="bP0-5X-rZ3"/>
                         <outlet property="taxLabel" destination="gNo-OM-eGz" id="yAW-Jj-0ag"/>
                         <outlet property="taxPctSlider" destination="TwJ-xx-LGv" id="qnE-JA-hqM"/>
+                        <outlet property="taxPercentageChanged" destination="TwJ-xx-LGv" id="ygq-Aq-4D9"/>
                         <outlet property="totalTextfield" destination="WCb-qu-Ysx" id="GAt-mq-07W"/>
                     </connections>
                 </viewController>
@@ -76,7 +78,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="476" y="171"/>
+            <point key="canvasLocation" x="498" y="171"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Srk-6Z-DyQ">
