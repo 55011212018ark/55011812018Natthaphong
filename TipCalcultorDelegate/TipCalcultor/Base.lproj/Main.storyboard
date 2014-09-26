@@ -56,12 +56,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="h2d-qj-KD0">
+                                <rect key="frame" x="150" y="280" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Tip Controller" id="V9r-87-Ihl"/>
                     <connections>
-                        <outlet property="resultsText" destination="qas-Fv-fub" id="OvV-aN-7pF"/>
+                        <outlet property="tableView" destination="h2d-qj-KD0" id="eKP-hb-ntX"/>
                         <outlet property="taxPctLabel" destination="gNo-OM-eGz" id="tya-T3-2EH"/>
                         <outlet property="taxPctSlider" destination="TwJ-xx-LGv" id="zj6-9N-4YG"/>
                         <outlet property="totalTextfield" destination="WCb-qu-Ysx" id="aKf-k8-I1u"/>
