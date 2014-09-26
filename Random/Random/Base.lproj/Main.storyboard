@@ -22,8 +22,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="One:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="H4f-zI-iCF"/>
-                                    <action selector="contOne:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3cr-M2-qdH"/>
+                                    <action selector="One:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Wim-tb-w8u"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiX-Gj-HxP">
@@ -36,19 +35,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVQ-CR-FbW">
-                                <rect key="frame" x="65" y="138" width="10" height="21"/>
+                                <rect key="frame" x="65" y="138" width="37" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zr-CL-dhx">
-                                <rect key="frame" x="147" y="138" width="10" height="21"/>
+                                <rect key="frame" x="147" y="138" width="29" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soT-cF-qx9">
-                                <rect key="frame" x="225" y="138" width="10" height="21"/>
+                                <rect key="frame" x="225" y="138" width="34" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -75,8 +74,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="oneButton" destination="yGa-vj-p9x" id="77x-MC-pQt"/>
-                        <outlet property="oneLabel" destination="MVQ-CR-FbW" id="5xb-4J-Hez"/>
+                        <outlet property="oneButton" destination="yGa-vj-p9x" id="Hqj-En-WH5"/>
+                        <outlet property="oneLabel" destination="MVQ-CR-FbW" id="EXV-dS-fXM"/>
                         <outlet property="resetButton" destination="a23-ez-yWn" id="11m-ZD-52W"/>
                         <outlet property="threeButton" destination="UiX-Gj-HxP" id="42m-84-uxN"/>
                         <outlet property="threeLabel" destination="soT-cF-qx9" id="O9N-eR-vGg"/>

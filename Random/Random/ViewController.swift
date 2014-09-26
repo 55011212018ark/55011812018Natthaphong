@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var threeLabel: UILabel!
   
     @IBOutlet weak var resetButton: UIButton!
-    
+ 
     
     @IBAction func One(sender: AnyObject) {
         i=i+1
@@ -42,12 +42,13 @@ class ViewController: UIViewController {
     
     
     @IBAction func ResetAll(sender: AnyObject) {
-        var i=0
-        var j=0
-        var k=0
+        i=0
+        j=0
+        k=0
+        
         oneLabel.text=String(i)
-        oneLabel.text=String(j)
-        twoLabel.text=String(k)
+        twoLabel.text=String(j)
+        threeLabel.text=String(k)
     }
     
     
