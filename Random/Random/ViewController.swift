@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     }
    
     @IBAction func Two(sender: AnyObject) {
-        j=j+1
+        j=j+2
         twoLabel.text=String(j)
     }
     
