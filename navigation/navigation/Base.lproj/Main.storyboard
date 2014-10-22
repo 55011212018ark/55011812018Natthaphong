@@ -13,23 +13,23 @@
                         <viewControllerLayoutGuide type="bottom" id="Y9i-Gx-Rsh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n3n-ex-4e4">
                                 <rect key="frame" x="1" y="72" width="373" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="K3w-KS-9Ob">
+                                    <navigationItem title="One" id="K3w-KS-9Ob">
                                         <barButtonItem key="leftBarButtonItem" title="Color" id="tT7-ru-f8I">
                                             <connections>
-                                                <segue destination="Wv5-4p-AB9" kind="show" id="ek0-Hq-7QH"/>
+                                                <segue destination="Wv5-4p-AB9" kind="show" identifier="mySegue" id="ek0-Hq-7QH"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unknow" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFF-P1-Fn6">
-                                <rect key="frame" x="155" y="142" width="64" height="21"/>
+                                <rect key="frame" x="131" y="172" width="139" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,25 +38,25 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Q6a-Qz-nwj"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="colorlabel" destination="fFF-P1-Fn6" id="Z60-dy-haP"/>
+                        <outlet property="colorLabel" destination="fFF-P1-Fn6" id="5bU-P9-ofS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="922.5" y="450.5"/>
+            <point key="canvasLocation" x="922" y="450"/>
         </scene>
-        <!--Color View Controller-->
+        <!--Color Two View Controller-->
         <scene sceneID="Lgh-xU-zMP">
             <objects>
-                <viewController id="Wv5-4p-AB9" customClass="colorViewController" customModule="navigation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Wv5-4p-AB9" customClass="colorTwoViewController" customModule="navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gw4-m0-Vsp"/>
                         <viewControllerLayoutGuide type="bottom" id="OFW-fq-Len"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yCw-8c-yJF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bg7-65-JM5">
@@ -71,7 +71,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="colorSerect:" destination="Wv5-4p-AB9" eventType="touchUpInside" id="dw5-oj-Gsv"/>
+                                    <action selector="colorSelectButton:" destination="Wv5-4p-AB9" eventType="touchUpInside" id="k84-Uc-Wz9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joU-Cn-WwB">
@@ -80,7 +80,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="colorSerect:" destination="Wv5-4p-AB9" eventType="touchUpInside" id="fiV-SO-lp3"/>
+                                    <action selector="colorSelectButton:" destination="Wv5-4p-AB9" eventType="touchUpInside" id="ds0-KJ-lc0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWI-qk-cxm">
@@ -89,24 +89,34 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="colorSerect:" destination="Wv5-4p-AB9" eventType="touchUpInside" id="F0K-qV-DPQ"/>
+                                    <action selector="colorSelectButton:" destination="Wv5-4p-AB9" eventType="touchUpInside" id="OuJ-wC-BJN"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="71B-84-lXi">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="PcA-ua-QhQ">
-                                        <barButtonItem key="leftBarButtonItem" title="Save" id="VcJ-r2-Oql"/>
+                                    <navigationItem title="Two" id="PcA-ua-QhQ">
+                                        <barButtonItem key="leftBarButtonItem" title="Save" id="VcJ-r2-Oql">
+                                            <connections>
+                                                <action selector="saveColor:" destination="Wv5-4p-AB9" id="pA5-We-whH"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unknow" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3C-TE-yji">
+                                <rect key="frame" x="164" y="236" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="6ow-BU-y6p"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="colorLabel" destination="Bg7-65-JM5" id="eV1-Bn-b0A"/>
+                        <outlet property="colorLabel" destination="I3C-TE-yji" id="YTh-fv-Wkg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f35-VU-KmV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -118,7 +128,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dk6-69-b8w" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nDr-1D-eSl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
