@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
  
-    @IBOutlet var colorLabel: UILabel!
+    
+    @IBOutlet var colorlabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
