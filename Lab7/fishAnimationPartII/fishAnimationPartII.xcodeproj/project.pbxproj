@@ -13,6 +13,9 @@
 		3F0CDCB51A0CCD9000D17DA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0CDCB41A0CCD9000D17DA9 /* Images.xcassets */; };
 		3F0CDCB81A0CCD9000D17DA9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F0CDCB61A0CCD9000D17DA9 /* LaunchScreen.xib */; };
 		3F0CDCC41A0CCD9000D17DA9 /* fishAnimationPartIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0CDCC31A0CCD9000D17DA9 /* fishAnimationPartIITests.swift */; };
+		3FEC19C31A1F4076003AF5E4 /* fish2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FEC19C11A1F4076003AF5E4 /* fish2.png */; };
+		3FEC19C41A1F4076003AF5E4 /* fish1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FEC19C21A1F4076003AF5E4 /* fish1.png */; };
+		3FEC19C81A1F42F4003AF5E4 /* pic2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FEC19C71A1F42F4003AF5E4 /* pic2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		3F0CDCBD1A0CCD9000D17DA9 /* fishAnimationPartIITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fishAnimationPartIITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0CDCC21A0CCD9000D17DA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F0CDCC31A0CCD9000D17DA9 /* fishAnimationPartIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fishAnimationPartIITests.swift; sourceTree = "<group>"; };
+		3FEC19C11A1F4076003AF5E4 /* fish2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish2.png; sourceTree = "<group>"; };
+		3FEC19C21A1F4076003AF5E4 /* fish1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish1.png; sourceTree = "<group>"; };
+		3FEC19C71A1F42F4003AF5E4 /* pic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,9 @@
 		3F0CDCAB1A0CCD9000D17DA9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3FEC19C71A1F42F4003AF5E4 /* pic2.jpg */,
+				3FEC19C11A1F4076003AF5E4 /* fish2.png */,
+				3FEC19C21A1F4076003AF5E4 /* fish1.png */,
 				3F0CDCAC1A0CCD9000D17DA9 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,8 +201,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FEC19C31A1F4076003AF5E4 /* fish2.png in Resources */,
+				3FEC19C81A1F42F4003AF5E4 /* pic2.jpg in Resources */,
 				3F0CDCB31A0CCD9000D17DA9 /* Main.storyboard in Resources */,
 				3F0CDCB81A0CCD9000D17DA9 /* LaunchScreen.xib in Resources */,
+				3FEC19C41A1F4076003AF5E4 /* fish1.png in Resources */,
 				3F0CDCB51A0CCD9000D17DA9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +417,7 @@
 				3F0CDCC91A0CCD9000D17DA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F0CDCCA1A0CCD9000D17DA9 /* Build configuration list for PBXNativeTarget "fishAnimationPartIITests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +426,7 @@
 				3F0CDCCC1A0CCD9000D17DA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
