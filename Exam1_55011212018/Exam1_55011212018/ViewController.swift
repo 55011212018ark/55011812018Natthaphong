@@ -11,8 +11,6 @@ import UIKit
 class ViewController: UIViewController,UITableViewDataSource {
   
     var names = [String]()
-    var names1 = [String]()
-    var names2 = [String]()
     @IBOutlet var tableView: UITableView!
     @IBAction func stocksItem(sender: AnyObject) {
         
